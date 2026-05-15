@@ -24,13 +24,13 @@ class ViewController: UIViewController {
         self.countLabel.text = "\(self.countValue)"
     }
     
-    @IBAction func decreaseBtnDidTap(_ sender: Any) {
-        self.countValue -= 1
+    @IBAction func increaseBtnDidTap(_ sender: Any) {
+        self.countValue += 1
         self.updateCountLabel()
     }
     
-    @IBAction func increaseBtnDidTap(_ sender: Any) {
-        self.countValue += 1
+    @IBAction func decreaseBtnDidTap(_ sender: Any) {
+        self.countValue -= 1
         self.updateCountLabel()
     }
 }
